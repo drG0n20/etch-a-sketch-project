@@ -14,7 +14,6 @@ function creatDivs(col, rows) {
 creatDivs(16, 16)
 
 function blackColor() {
-
   const boxs = container.querySelectorAll('.box')
   btnBlack.textContent = 'BLACK';
   btnBlack.addEventListener('click', function () {
@@ -34,10 +33,10 @@ function reset(){
 }
 
 function reSize() {
-  btnSize.textContent = 'GRID SIZE'
+  btnSize.textContent = 'GRID SIZE / RESET'
   btnSize.addEventListener('click', ()=>{
     let user = prompt('SET THE GRID SIZE')
-    if(user === null || user <1){
+    if(user === null || user <1 || isNaN(user)){
       reset();
       creatDivs(16,16);
       blackColor;
