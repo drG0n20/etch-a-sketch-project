@@ -43,7 +43,7 @@ section h1 {
   background: rgb(240,255,240);
   border-radius: 10px;
 }
-/* 
+
 .buttons {
   width: 600px;
   position: absolute;
@@ -51,8 +51,8 @@ section h1 {
   bottom: 0;
   display: flex;
   justify-content: space-around;
-} */
-/* 
+}
+
 .btn{
   padding: 1em 3em;
   order: 1;
@@ -65,8 +65,8 @@ section h1 {
   font-weight: bold;
   z-index: 100;
   letter-spacing: 1px;
-} */
-
-/* .buttons button:last-child {
+}
+/* 
+.buttons button:last-child {
   order: -1;
 } */

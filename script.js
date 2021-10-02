@@ -25,7 +25,7 @@ function blackColor() {
 }
 blackColor()
 
-function reset(){
+function reset() {
   const boxs = container.querySelectorAll('.box')
   boxs.forEach(box => {
     box.remove();
@@ -34,11 +34,11 @@ function reset(){
 
 function reSize() {
   btnSize.textContent = 'GRID SIZE / RESET'
-  btnSize.addEventListener('click', ()=>{
+  btnSize.addEventListener('click', () => {
     let user = prompt('SET THE GRID SIZE')
-    if(user === null || user <1 || isNaN(user)){
+    if (user === null || user < 1 || isNaN(user)) {
       reset();
-      creatDivs(16,16);
+      creatDivs(16, 16);
       blackColor;
     } else {
       reset();
