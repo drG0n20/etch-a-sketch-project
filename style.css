@@ -5,13 +5,20 @@
   
   #container {
     display: grid;
-    grid-gap: .5em;
+    /* grid-gap: .1em; */
     grid-template-rows: repeat(var(--grid-rows), .5fr);
-    grid-template-columns: repeat(var(--grid-cols), .5fr);
+    grid-template-columns: repeat(var(--grid-cols), 2fr);
+    /* grid-template-columns: auto auto auto; */
+    padding: 10px;
   }
   
   .grid-item {
-    padding: .2em;
+    padding: 2em;
     border: 1px solid #ddd;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* padding: 20px; */
+    font-size: 10px;
     text-align: center;
   }
